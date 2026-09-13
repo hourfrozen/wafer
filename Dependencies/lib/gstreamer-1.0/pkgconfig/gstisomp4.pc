@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gstisomp4
+Description: gst-plugins-good: gstisomp4
+Version: 1.19.1
+Requires.private: gstreamer-1.0 >=  1.19.0, gstreamer-riff-1.0 >=  1.19.0, gstreamer-audio-1.0 >=  1.19.0, gstreamer-video-1.0 >=  1.19.0, gstreamer-rtp-1.0 >=  1.19.0, gstreamer-tag-1.0 >=  1.19.0, gstreamer-pbutils-1.0 >=  1.19.0
+Libs: -L${prefix}/lib/gstreamer-1.0 -lgstisomp4
+Libs.private: -lz
+Cflags: -I${includedir}

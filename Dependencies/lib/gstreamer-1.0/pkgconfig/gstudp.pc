@@ -1,0 +1,10 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gstudp
+Description: gst-plugins-good: gstudp
+Version: 1.19.1
+Requires.private: gstreamer-1.0 >=  1.19.0, gstreamer-base-1.0 >=  1.19.0, gstreamer-net-1.0 >=  1.19.0, gio-2.0
+Libs: -L${prefix}/lib/gstreamer-1.0 -lgstudp
+Cflags: -I${includedir}

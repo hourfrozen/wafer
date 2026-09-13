@@ -1,0 +1,9 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: dxmt-native
+Description: DXMT native D3D-on-Metal backend
+Version: v0.1
+Libs: -L${libdir} -ldxmt-native
+Cflags: -I${includedir}/dxmt-native

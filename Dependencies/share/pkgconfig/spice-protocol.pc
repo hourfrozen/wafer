@@ -1,0 +1,9 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+
+datadir=${prefix}/share
+
+Name: spice-protocol
+Description: SPICE protocol headers
+Version: 0.14.4
+Cflags: -I${includedir}/spice-1

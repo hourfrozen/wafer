@@ -1,0 +1,13 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+exec_prefix=${prefix}
+
+Name: libsoup
+Description: A glib-based HTTP library
+Version: 3.6.0
+Requires: glib-2.0 >=  2.70.0, gmodule-no-export-2.0 >=  2.70.0, gobject-2.0 >=  2.70.0, gio-2.0 >=  2.70.0
+Libs: -L${libdir} -lsoup-3.0
+Libs.private: -lsqlite3 -lz
+Cflags: -I${includedir}/libsoup-3.0

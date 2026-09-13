@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gstsmpte
+Description: gst-plugins-good: gstsmpte
+Version: 1.19.1
+Requires.private: gstreamer-video-1.0 >=  1.19.0, gstreamer-1.0 >=  1.19.0
+Libs: -L${prefix}/lib/gstreamer-1.0 -lgstsmpte
+Libs.private: -lm
+Cflags: -I${includedir}

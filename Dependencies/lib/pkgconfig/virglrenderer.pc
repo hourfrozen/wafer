@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: virglrenderer
+Description: virgl GL renderer
+Version: 1.3.0
+Requires.private: epoxy >=  1.5.4, vulkan
+Libs: -L${libdir} -lvirglrenderer
+Libs.private: -lm -framework Metal -framework Foundation -framework Metal -framework Foundation
+Cflags: -I${includedir}/virgl

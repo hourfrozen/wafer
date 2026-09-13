@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: slirp
+Description: User-space network stack
+Version: 4.9.1
+Requires: glib-2.0
+Libs: -L${libdir} -lslirp
+Libs.private: -lresolv
+Cflags: -I${includedir}/slirp

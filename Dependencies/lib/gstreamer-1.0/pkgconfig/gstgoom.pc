@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: gstgoom
+Description: gst-plugins-good: gstgoom
+Version: 1.19.1
+Requires.private: gstreamer-1.0 >=  1.19.0, gstreamer-pbutils-1.0 >=  1.19.0, gstreamer-base-1.0 >=  1.19.0
+Libs: -L${prefix}/lib/gstreamer-1.0 -lgstgoom
+Libs.private: -lm
+Cflags: -I${includedir}

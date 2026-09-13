@@ -1,0 +1,11 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: phodav-3.0
+Description: A WebDAV library based on libsoup
+Version: 3.0
+Requires: libsoup-3.0 >=  3.0.0
+Requires.private: gio-unix-2.0 >=  2.44, libxml-2.0
+Libs: -L${libdir} -lphodav-3.0
+Cflags: -I${includedir}/libphodav-3.0

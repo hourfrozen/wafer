@@ -1,0 +1,9 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libfdt
+Description: Flat Device Tree manipulation
+Version: 1.6.0
+Libs: -L${libdir} -lfdt
+Cflags: -I${includedir}

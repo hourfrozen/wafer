@@ -1,0 +1,9 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libucontext
+Description: Portable implementation of ucontext
+Version: 1.0
+Libs: -L${libdir} -lucontext
+Cflags: -I${includedir}/libucontext

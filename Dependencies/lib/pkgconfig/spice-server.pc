@@ -1,0 +1,14 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: spice
+Description: SPICE server library
+Version: 0.14.3
+
+Requires: spice-protocol >= 0.14.0
+Requires.private: glib-2.0 >= 2.38 gio-2.0 >= 2.38 gobject-2.0 >= 2.38 pixman-1 >= 0.17.7 openssl
+Libs: -L${libdir} -lspice-server
+Libs.private: -pthread -lm -lrt
+Cflags: -I${includedir}/spice-server

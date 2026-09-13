@@ -1,0 +1,14 @@
+prefix=/Users/runner/actions/runner-2/_work/UTM/UTM/sysroot-iOS-arm64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+cryptolib=openssl
+
+with_tpm1=1
+with_tpm2=1
+
+Name: libtpms
+Version: 0.9.6
+Description: libtpms
+Libs: -L${libdir} -ltpms
+Cflags: -I${includedir}
